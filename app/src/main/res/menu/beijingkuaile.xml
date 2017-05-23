@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/zh"
+            android:title="整合"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zm"
+            android:title="正码"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

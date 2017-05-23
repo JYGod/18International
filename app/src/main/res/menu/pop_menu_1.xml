@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/bjsc"
+            android:title="北京赛车(PK10)"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/cqssc"
+            android:title="重庆时时彩"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/bjkl"
+            android:title="北京快乐8"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gxk"
+            android:title="广西快3"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gxkl"
+            android:title="广西快乐十分"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gd"
+            android:title="广东11选5"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/xglhc"
+            android:title="香港六合彩"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/xjssc"
+            android:title="新疆时时彩"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/tjssc"
+            android:title="天津时时彩"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gdkl"
+            android:title="广东快乐十分"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/fc"
+            android:title="福彩3D"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/tcpl"
+            android:title="体彩排列3"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/cqxync"
+            android:title="重庆幸运农场"
+            app:showAsAction="ifRoom"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:gravity="bottom">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:text="前一页"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/btn_custom"
+                android:id="@+id/btn_pre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <TextView
+                    android:text="第"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView48"
+                    android:gravity="center" />
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:text="  "
+                    android:ems="10"
+                    android:id="@+id/et_page"
+                    android:background="@drawable/et_bg"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:text="页"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView52"
+                    android:gravity="center" />
+
+                <Button
+                    android:text="前往"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_go"
+                    android:background="@drawable/btn_custom"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:text="共 4 笔记录 共 1 页"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_yeshu"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:text="后一页"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/btn_custom"
+                android:id="@+id/btn_next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

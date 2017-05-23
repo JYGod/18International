@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/lx2"
+            android:title="二连肖"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lx3"
+            android:title="三连肖"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lx4"
+            android:title="四连肖"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lx5"
+            android:title="五连肖"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lw2"
+            android:title="二连尾"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lw3"
+            android:title="三连尾"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lw4"
+            android:title="四连尾"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lw5"
+            android:title="五连尾"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

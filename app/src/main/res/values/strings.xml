@@ -1,0 +1,13 @@
+<resources >
+    <string name="app_name">18国际</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="lock">安全设置</string>
+    <string name="user">账号设置</string>
+    <string name="message">消息中心</string>
+    <string name="chongzhi">充值</string>
+    <string name="tikuan">提款</string>
+    <string name="lishi">交易历史</string>
+</resources>

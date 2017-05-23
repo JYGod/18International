@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/select_activity_listview">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_width="300dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="0.48"
+            android:layout_height="400dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/select_tema">
+
+                    <TextView
+                        android:text="特码"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="两面"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="色波"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_srsx">
+
+                    <TextView
+                        android:text="十二生肖"
+                        android:layout_width="match_parent"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_hx">
+
+                    <TextView
+                        android:text="合肖"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_tws">
+
+                    <TextView
+                        android:text="头尾数"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zm">
+
+                    <TextView
+                        android:text="正码"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zmt">
+
+                    <TextView
+                        android:text="正码特"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zm16">
+
+                    <TextView
+                        android:text="正码1-6"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_wx">
+
+                    <TextView
+                        android:text="五行"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_yxws">
+
+                    <TextView
+                        android:text="一肖尾数"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zx1">
+
+                    <TextView
+                        android:text="正肖"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_7sb">
+
+                    <TextView
+                        android:text="7色波"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zx2">
+
+                    <TextView
+                        android:text="总肖"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_zxbz">
+
+                    <TextView
+                        android:text="自选不中"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_dp">
+
+                    <TextView
+                        android:text="对碰"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/select_lm">
+
+                    <TextView
+                        android:text="连码"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textView65"
+                        android:textSize="16sp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.48"
+            android:gravity="center">
+
+            <Button
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_acivity_cancle" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

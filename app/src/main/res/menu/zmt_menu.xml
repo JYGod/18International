@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/zmt_1"
+            android:title="正一特"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zmt_2"
+            android:title="正二特"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zmt_3"
+            android:title="正三特"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zmt_4"
+            android:title="正四特"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zmt_5"
+            android:title="正五特"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/zmt_6"
+            android:title="正六特"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/gd11x5_two_side"
+            android:title="两面"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gd11x5_single"
+            android:title="单号"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gd11x5_lm"
+            android:title="连码"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gd11x5_zx"
+            android:title="直选"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

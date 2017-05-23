@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/bsdw"
+            android:title="佰拾定位"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/bgdw"
+            android:title="佰个定位"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/sgdw"
+            android:title="拾个定位"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

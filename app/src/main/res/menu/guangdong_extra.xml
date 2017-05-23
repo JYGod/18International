@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/qezx"
+            android:title="前二直选"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/qszx"
+            android:title="前三直选"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>

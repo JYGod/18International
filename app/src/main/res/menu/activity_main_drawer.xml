@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home_page"
+            android:id="@+id/nav_home"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_gerenzhongxin"
+            android:icon="@drawable/shezhi"
+            android:title="个人中心" />
+        <item
+            android:id="@+id/nav_cunqukuan"
+            android:icon="@drawable/money"
+            android:title="存款/取款" />
+        <item
+            android:icon="@drawable/jiemingxi"
+            android:id="@+id/nav_mingxi"
+            android:title="未结明细" />
+        <item
+            android:icon="@drawable/yijie"
+            android:id="@+id/nav_yijie"
+            android:title="今日已结" />
+        <item
+            android:icon="@drawable/two_week"
+            android:id="@+id/nav_baobiao"
+            android:title="两周报表" />
+        <item
+            android:icon="@drawable/kaijiang_res"
+            android:id="@+id/nav_jieguo"
+            android:title="开奖结果" />
+        <item
+            android:icon="@drawable/guize_pic"
+            android:id="@+id/nav_guize"
+            android:title="规则" />
+        <item
+            android:id="@+id/nav_kefu"
+            android:icon="@drawable/erji"
+            android:title="在线客服" />
+        <item
+            android:id="@+id/nav_out"
+
+            android:title="退出"
+            />
+    </group>
+
+
+
+</menu>

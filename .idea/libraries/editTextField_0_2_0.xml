@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="editTextField-0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/030c6ff4294a83837d6a0cba8aae9557be6c0509/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/030c6ff4294a83837d6a0cba8aae9557be6c0509/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.optimus/editTextField/0.2.0/f518bca56dcf8b4e3edf1ffb9c30f42c8b69b752/editTextField-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="ifRoom">
+    <group
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/lmp"
+            android:title="两面盘"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/dh"
+            android:title="单号1~10"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/gyjzh"
+            android:title="冠亚军组合"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+</menu>
