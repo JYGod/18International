@@ -69,8 +69,8 @@ public class CActivity extends Activity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, PK10TwoSide.class);
-                startActivity(intent);
+//                Intent intent = new Intent(mContext, PK10TwoSide.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -122,32 +122,38 @@ public class CActivity extends Activity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             if (msg.what == 0) {
-                if (!tag.equals("请求数据失败！")){
+                if (!tag.equals("请求数据失败！")) {
                     Gson gson = new Gson();
                     loadUserMessage = gson.fromJson(tag, LoadUserMessages.class);
                     ArrayList<List<LoadUserMessages.Listj>> loadUserMessages = new ArrayList<>();
                     result = loadUserMessage.getResult().getList();
-                    for (int i = 0; i < 15; i++) {
-                        loadUserMessages.add(result);
+                    if (result.size() < 15) {
+                        for (int i = 0; i < result.size(); i++) {
+                            loadUserMessages.add(result);
+                        }
+                    } else {
+                        for (int i = 0; i < 15; i++) {
+                            loadUserMessages.add(result);
+                        }
                     }
                     resultList = new ArrayList<>();
                     resultList.addAll(loadUserMessages);
                     userMessageAdapter.bindData(resultList);
                     lvUserMessage.setAdapter(userMessageAdapter);
                     userMessageAdapter.notifyDataSetChanged();
-                }else {
-                    Toast.makeText(getApplicationContext(),tag,Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), tag, Toast.LENGTH_SHORT).show();
                 }
             } else if (msg.what == 1) {
-                if (!personMsg.equals("请求数据失败！")){
-                    Gson gson=new Gson();
-                    loadMessage=gson.fromJson(personMsg, LoadMessage.class);
+                if (!personMsg.equals("请求数据失败！")) {
+                    Gson gson = new Gson();
+                    loadMessage = gson.fromJson(personMsg, LoadMessage.class);
                     messageTitle.setText(loadMessage.getResult().getMessage_title());
                     messageContent.setText(loadMessage.getResult().getMessage_content());
                     dateTime.setText(loadMessage.getResult().getDate_time());
                     alertWindow.setVisibility(View.VISIBLE);
-                }else {
-                    Toast.makeText(getApplicationContext(),personMsg,Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), personMsg, Toast.LENGTH_SHORT).show();
                 }
 
             }

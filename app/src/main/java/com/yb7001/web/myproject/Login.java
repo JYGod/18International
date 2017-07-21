@@ -17,6 +17,7 @@ import com.yb7001.web.myproject.service.SoapServiceImpl;
 import com.optimus.edittextfield.EditTextField;
 
 import java.text.DecimalFormat;
+import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -109,6 +110,7 @@ public class Login extends Activity {
                 MainGlobalData.USE_MONEY=String.valueOf(df.format(Double.parseDouble(validateLoginResult.getResult().getUseMoney())));
                 MainGlobalData.DONGJIE_MONEY=String.valueOf(df.format(Double.parseDouble(validateLoginResult.getResult().getDongjieMoney())));
                 MainGlobalData.REBATE=String.valueOf(df.format(Double.parseDouble(validateLoginResult.getResult().getRebate())));
+                MainGlobalData.SYS_DEPOSITE_URL = validateLoginResult.getResult().getSysDepositUrl();
                 Intent intent=new Intent(mContext,UserXieyi.class);
                 startActivity(intent);
                 finish();

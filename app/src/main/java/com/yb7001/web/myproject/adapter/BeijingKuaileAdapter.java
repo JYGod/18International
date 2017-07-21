@@ -62,9 +62,9 @@ public class BeijingKuaileAdapter extends BaseAdapter {
             holder = (BeijingKuaileAdapter.ViewHolder) view.getTag();
         }
 
-        if (data!=null){
-            loadLotteryHistory=data.get(position);
-            result=loadLotteryHistory.get(position);
+        if (data != null) {
+            loadLotteryHistory = data.get(position);
+            result = loadLotteryHistory.get(position);
             holder.openExpectNumber.setText(result.getOpenExpectNumber());
             holder.openTime.setText(result.getOpenTime());
             holder.openNo1.setText(result.getOpenNo1());
@@ -88,34 +88,34 @@ public class BeijingKuaileAdapter extends BaseAdapter {
             holder.openNo19.setText(result.getOpenNo19());
             holder.openNo20.setText(result.getOpenNo20());
             holder.openTotal.setText(result.getOpenTotal());
-            if (result.getOpenTotalDaXiao().equals("大")){
+            if (result.getOpenTotalDaXiao().equals("大")) {
                 holder.openTotalDaXiao.setTextColor(Color.RED);
-            }else {
+            } else {
                 holder.openTotalDaXiao.setTextColor(view.getResources().getColor(R.color.grey));
             }
             holder.openTotalDaXiao.setText(result.getOpenTotalDaXiao());
-            if (result.getOpenTotalDanShuang().equals("双")){
+            if (result.getOpenTotalDanShuang().equals("双")) {
                 holder.openTotalDanShuang.setTextColor(Color.RED);
-            }else {
+            } else {
                 holder.openTotalDanShuang.setTextColor(view.getResources().getColor(R.color.grey));
             }
             holder.openTotalDanShuang.setText(result.getOpenTotalDanShuang());
             holder.wuxing.setText(result.getWuxing());
 
-            if (result.getQianhouhe().equals("前(多)")){
+            if (result.getQianhouhe().equals("前(多)")) {
                 holder.qianhou.setTextColor(Color.RED);
-            }else if (result.getQianhouhe().equals("和")){
+            } else if (result.getQianhouhe().equals("和")) {
                 holder.qianhou.setTextColor(view.getResources().getColor(R.color.blue_dark));
-            }else {
+            } else {
                 holder.qianhou.setTextColor(view.getResources().getColor(R.color.grey));
             }
             holder.qianhou.setText(result.getQianhouhe());
 
-            if (result.getDanshuanghe().equals("双(多)")){
+            if (result.getDanshuanghe().equals("双(多)")) {
                 holder.danshuanghe.setTextColor(Color.RED);
-            }else if (result.getDanshuanghe().equals("和")){
+            } else if (result.getDanshuanghe().equals("和")) {
                 holder.danshuanghe.setTextColor(view.getResources().getColor(R.color.blue_dark));
-            }else {
+            } else {
                 holder.danshuanghe.setTextColor(view.getResources().getColor(R.color.grey));
             }
             holder.danshuanghe.setText(result.getDanshuanghe());

@@ -16,10 +16,10 @@
             android:gravity="center">
 
             <TextView
-                android:text="--"
+                android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView59" />
+                android:text="--" />
         </LinearLayout>
 
         <LinearLayout
@@ -29,10 +29,10 @@
             android:gravity="center">
 
             <TextView
-                android:text="--"
+                android:id="@+id/tv_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView60" />
+                android:text="--" />
         </LinearLayout>
 
         <LinearLayout
@@ -42,10 +42,10 @@
             android:gravity="center">
 
             <TextView
-                android:text="--"
+                android:id="@+id/tv_bet_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView61" />
+                android:text="--" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,10 +55,10 @@
             android:gravity="center">
 
             <TextView
-                android:text="--"
+                android:id="@+id/tv_bet_acount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView62" />
+                android:text="--" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

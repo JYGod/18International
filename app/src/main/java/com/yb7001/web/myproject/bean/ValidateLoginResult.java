@@ -48,6 +48,7 @@ public class ValidateLoginResult {
         public String sysHelp;
         public String sysAddress;
         public String sysAbountUs;
+        public String sysDepositUrl;
 
         public String getAndroidDownAddress() {
             return androidDownAddress;
@@ -183,6 +184,14 @@ public class ValidateLoginResult {
 
         public void setLottery_pan(String lottery_pan) {
             this.lottery_pan = lottery_pan;
+        }
+
+        public String getSysDepositUrl() {
+            return sysDepositUrl;
+        }
+
+        public void setSysDepositUrl(String sysDepositUrl) {
+            this.sysDepositUrl = sysDepositUrl;
         }
     }
 

@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+import com.yb7001.web.myproject.adapter.BaobiaoAdapter;
 import com.yb7001.web.myproject.bean.LoadUserBets;
 import com.yb7001.web.myproject.service.SoapServiceImpl;
 
@@ -82,8 +83,8 @@ public class Baobiao extends Activity implements DatePickerDialog.OnDateSetListe
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, PK10TwoSide.class);
-                startActivity(intent);
+//                Intent intent = new Intent(mContext, PK10TwoSide.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -166,8 +167,11 @@ public class Baobiao extends Activity implements DatePickerDialog.OnDateSetListe
                 } else {
                     Gson gson = new Gson();
                     userBets = gson.fromJson(result, LoadUserBets.class);
-                    betMoney.setText(userBets.getResult().getRows().get(0).getBetMoney());
-                    betAcount.setText(userBets.getResult().getRows().get(0).getBetAcount());
+                    betMoney.setText(userBets.getResult().getFooter().get(1).getBetMoney());
+                    betAcount.setText(userBets.getResult().getFooter().get(1).getBetAcount());
+                    BaobiaoAdapter adapter = new BaobiaoAdapter(mContext, userBets.getResult().getRows());
+                    lvBaobiao.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
                     progressBar.setVisibility(View.GONE);
                     btnSearch.setEnabled(true);
                 }

@@ -72,8 +72,8 @@ public class AActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, PK10TwoSide.class);
-                startActivity(intent);
+//                Intent intent = new Intent(mContext, PK10TwoSide.class);
+//                startActivity(intent);
                 finish();
             }
         });

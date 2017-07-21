@@ -6,15 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.yb7001.web.myproject.R;
 import com.yb7001.web.myproject.PK10TwoSide;
 import com.yb7001.web.myproject.MainGlobalData;
+import com.yb7001.web.myproject.bean.UserAddressInfo;
 import com.yb7001.web.myproject.service.SoapServiceImpl;
 
 import butterknife.Bind;
@@ -46,8 +49,8 @@ public class BActivity extends Activity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, PK10TwoSide.class);
-                startActivity(intent);
+//                Intent intent = new Intent(mContext, PK10TwoSide.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -100,6 +103,13 @@ public class BActivity extends Activity {
             }else if (msg.what==1){
                 if (!selectRes.equals("请求数据失败！")){
 
+                    Log.e("用户地址信息",selectRes);
+
+                    Gson gson = new Gson();
+                    UserAddressInfo userAddressInfo = gson.fromJson(selectRes, UserAddressInfo.class);
+                    address.setText(userAddressInfo.getResult().getAddress());
+                    uSer.setText(userAddressInfo.getResult().getRealUserName());
+                    phone.setText(userAddressInfo.getResult().getUserTel());
                 }
             }
         }

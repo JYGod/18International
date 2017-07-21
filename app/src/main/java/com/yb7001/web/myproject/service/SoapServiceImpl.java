@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class SoapServiceImpl extends BaseWCFService implements ISoapService{
     private static final String NameSpace = "http://tempuri.org/";
-    public static final String URL = "http://58.64.202.165/Services/YbWCFServices.svc";
+    public static final String URL = "http://58.64.202.166:8080/YBService/YbWCFServices.svc";
     private static final String SOAP_ACTION = "http://tempuri.org/IYbWCFServices/";
     private SoapPrimitive result;
 

@@ -56,8 +56,8 @@ public class Tikuan extends Activity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, PK10TwoSide.class);
-                startActivity(intent);
+//                Intent intent = new Intent(mContext, PK10TwoSide.class);
+//                startActivity(intent);
                 finish();
             }
         });
@@ -81,7 +81,7 @@ public class Tikuan extends Activity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             if (msg.what == 1) {
-                if (!resBankInfo.equals("请求数据失败！")) {
+                if (!resBankInfo.trim().equals("请求数据失败！")) {
                     Log.e("resBankInfo", resBankInfo);
                     Gson gson = new Gson();
                     BankInfo bankInfo = gson.fromJson(resBankInfo, BankInfo.class);
